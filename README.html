@@ -24,10 +24,54 @@ div {
     from {background-color: darkmagenta;}
     to {background-color: lightblue;}
 }
-</style>
+
+    
+    
+     div {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+} 
+    </style>
   </head>
 <body style="background-color:paleturquoise;">
-  
+
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}  
   <h1>Aria's Webpage is AWESOME!</h1>
   <h2>I love Coding Club</h2>
   <div>My first time creating a webpage was 1-10-17 and it is so cool because I can show the world that I have my own "website".
@@ -74,10 +118,11 @@ div {
     <p>
  <h4>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h4>
   
-  <p style=background-color:indigo;>
-  I am going to make a visionboard
+  <p style=background-color:darkorchid;>
+  I am going to make a visionboard to hand in my room that helps me reach my goals and one of those goals is that in the future
+  I would like to create a website using html code.
   </p>
-   
+ 
     
     
     
