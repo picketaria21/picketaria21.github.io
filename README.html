@@ -11,6 +11,7 @@
     border-radius:50%;
     width: 100px;
     height: 100px;
+    animation-name:mymove;
   }
    /* Standard syntax */
 #div1 {animation-timing-function: linear;}
@@ -19,16 +20,14 @@
 #div4 {animation-timing-function: ease-out;}
 #div5 {animation-timing-function: ease-in-out;}
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    from {left: 0px;}
-    to {left: 800px;}
-}
-
 /* Standard syntax */
 @keyframes mymove {
     from {left: 0px;}
     to {left: 800px;}
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
 } 
   
 
