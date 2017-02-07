@@ -18,18 +18,22 @@
   
 @keyframes firstcolor {
     from {left: 0px;}
-    to {left: 300px;}
+    to {left: 800px;}
   }
   
   @keyframes secondcolor {
-    from {background-color: red;left: 0px;}
-    to {background-color: yellow;left: 800px}
+    from {background-color: red; left: 0px;}
+    to {background-color: yellow; left: 800px}
   }
+#div1 {-webkit-animation-timing-function: linear;}
   
   /* Standard syntax */
 #div1 {animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
   animation-name: firstcolor;
-  animation-duration: 4s;}
+  -webkit-animation-name: firstcolor;
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;}
 #div2 {animation-timing-function: ease;}
 #div3 {animation-timing-function: ease-in;
   animation-name: secondcolor;
