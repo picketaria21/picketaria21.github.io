@@ -11,7 +11,7 @@
     border-radius:50%;
     width: 100px;
     height: 100px;
-    animation-name:mymove;
+    animation-name: mymove;
     animation-duration: 10s;
     animation-iteration-count: infinite;
   }
@@ -24,11 +24,14 @@
 
 /* Standard syntax */
 @keyframes mymove {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
+    0%   {background-color: red;
+          left: 0px;}
+    25%  {background-color: yellow;
+          left: 400px;}
     50%  {background-color: blue;
           left: 800px;}
-  75%   {background-color: pink;}
+  75%   {background-color: pink;
+          left: 400px;}
     100% {background-color: green;
           left: 0px;}
 } 
