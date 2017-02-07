@@ -11,9 +11,7 @@
     border-radius:50%;
     width: 100px;
     height: 100px;
-    animation-name: mymove;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation: mymove 5s infinite;
       }
   
 @keyframes firstcolor {
@@ -30,12 +28,9 @@
   /* Standard syntax */
 #div1 {
   background-color: pink;
+    animation: firstcolor 5s infinite;
   animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-  animation-name: firstcolor;
-  -webkit-animation-name: firstcolor;
-  animation-duration: 4s;
-  -webkit-animation-duration: 4s;}
+}
 #div2 {animation-timing-function: ease;}
 #div3 {animation-timing-function: ease-in;
   animation-name: secondcolor;
