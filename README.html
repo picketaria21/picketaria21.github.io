@@ -16,9 +16,11 @@
     animation-iteration-count: infinite;
   }
    /* Standard syntax */
-#div1 {animation-timing-function: linear;}
+#div1 {animation-timing-function: linear;
+  animation-name: firstColor;}
 #div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
+#div3 {animation-timing-function: ease-in;
+  animation-name: secondColor;}
 #div4 {animation-timing-function: ease-out;}
 #div5 {animation-timing-function: ease-in-out;}
 
@@ -36,7 +38,15 @@
           left: 0px;}
 } 
   
-
+@keyframes firstColor {
+    from {background-color: red; left: 0px}
+    to {background-color: yellow; left: 800px;}
+  }
+  
+  @keyframes secondColor {
+    from {background-color: red;left: 0px;}
+    to {background-color: yellow;left: 800px}
+  }
     </style>
   </head>
 <body style="background-color:paleturquoise;">
