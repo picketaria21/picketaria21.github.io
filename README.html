@@ -11,16 +11,11 @@
     background-color: blueviolet;
     font-weight: bold;
     position: relative;
-    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s infinite;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-
-/* Safari 4.0 - 8.0 */
-#div1 {-webkit-animation-timing-function: linear;}
-#div2 {-webkit-animation-timing-function: ease;}
-#div3 {-webkit-animation-timing-function: ease-in;}
-#div4 {-webkit-animation-timing-function: ease-out;}
-#div5 {-webkit-animation-timing-function: ease-in-out;}
 
 /* Standard syntax */
 #div1 {animation-timing-function: linear;}
@@ -51,6 +46,7 @@
 
   <h1>Aria's Webpage is AWESOME!</h1>
   <h2>I love Coding Club</h2>
+  <div >If you are on this then share it with someone else!</div>
   <div id="div1">If you are on this then share it with someone else!</div>
 <div id="div2">I hope you are having a good day.</div>
 <div id="div3">Remember that you are very unique!</div>
