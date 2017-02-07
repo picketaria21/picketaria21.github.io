@@ -12,7 +12,7 @@
     width: 100px;
     height: 100px;
     animation-name:mymove;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
   }
    /* Standard syntax */
@@ -26,8 +26,11 @@
 @keyframes mymove {
     0%   {background-color: red;}
     25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+    50%  {background-color: blue;
+          left: 800px;}
+  75%   {background-color: pink;}
+    100% {background-color: green;
+          left: 0px;}
 } 
   
 
