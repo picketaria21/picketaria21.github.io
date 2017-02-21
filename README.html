@@ -37,7 +37,13 @@
     from {background-color: red; left: 0px;}
     to {background-color: yellow; left: 800px}
   }
- 
+  @keyframes fourthcolor {
+     0%   {background-color: red;top:0px;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+  75%   {background-color: pink;}
+    100% {background-color: green;top:800px;}
+  }
   /* Standard syntax */
 #div1 {
   background-color: pink;
@@ -54,7 +60,9 @@
 #div4 {animation-timing-function: ease-out;
   animation-name: thirdcolor;
   animation-duration: 4s;}
-#div5 {animation-timing-function: ease-in-out;}
+#div5 {animation-timing-function: ease-in-out;
+  animation-name:fourthcolor;
+  animation-duration: 4s;}
 
 
 
