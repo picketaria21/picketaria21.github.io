@@ -23,9 +23,12 @@
 } 
   
   @keyframes firstcolor {
-    from {left: 0px;}
-    to {left: 400px;}
-  }
+   0%   {background-color: red;top:-0px;left:0px;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+  75%   {background-color: pink;}
+    100% {background-color: green;top:300px;left:800px;}
+} 
   @keyframes thirdcolor {
      0%   {background-color: red;left:0px;}
     25%  {background-color: yellow;}
@@ -46,8 +49,7 @@
   }
   /* Standard syntax */
 #div1 {
-  background-color: pink;
-    animation: firstcolor 5s infinite;
+      animation: mymove 5s infinite;
   animation-timing-function: linear;
 }
   
