@@ -64,6 +64,13 @@
   75%   {background-color: pink;}
     100% {background-color: darkmagenta;top:-700px;}
   }
+   @keyframes seventhcolor {
+     0%   {background-color: lavender;top:0px;left:0px;}
+    25%  {background-color: orchid;top:-100px;left:400px;}
+    50%  {background-color: mediumpurple;top:0px;left:800px;}
+  75%   {background-color: pink;top:-100px;left:400px;}
+    100% {background-color: darkmagenta;top:0px;left:0px;}
+  }
   /* Standard syntax */
 #div1 {
       animation: mymove 6s infinite;
@@ -88,7 +95,9 @@
 #div7 {animation-timing-function: ease-in-out;
   animation-name:sixthcolor;
   animation-duration: 6s;}
-
+#div8 {animation-timing-function: ease-out;
+  animation-name:seventhcolor;
+  animation-duration: 6s;}
     </style>
   </head>
 <body style="background-color:paleturquoise;">
